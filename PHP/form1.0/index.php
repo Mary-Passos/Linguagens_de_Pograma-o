@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -10,19 +10,20 @@
 <body>
     <form action="cadastro.php" method="post">
         <fieldset>
-            <lgends>Cadastre seus dados aqui.</legends>
+            <h2>Formulario teste.</h2>
+            <lgends><strong>Cadastre seus dados aqui:</strong></legends>
                 <div>
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" /><br>
+                    <input type="text" name="nome" required /><br>
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input type="text" name="email" /><br>
+                    <input type="email" name="email" required /><br>
                 </div>
 
                 <div>
                     <label for="idade">Idade</label>
-                    <input type="number" id="idade" name="idade" min="8" max="99" />
+                    <input type="number" id="idade" name="idade" min="8" max="99" required />
                 </div>
 
 
@@ -32,15 +33,15 @@
 
                 <div>
                     <label for="homem">homem</label>
-                    <input type="checkbox" id="homem" name="homem" value="homem">
+                    <input type="radio" id="homem" name="sexo" value="homem" required />
 
 
                     <label for="mulher">mulher</label>
-                    <input type="checkbox" id="mulher" name="mulher" value="mulher" />
+                    <input type="radio" id="mulher" name="sexo" value="mulher" required />
 
 
                     <label for="outros">outros</label>
-                    <input type="checkbox" id="outros" name="outros" value="mulher">
+                    <input type="radio" id="outros" name="sexo" value="outros" required />
 
 
                 </div>
@@ -48,11 +49,8 @@
 
                 <div>
                     <label for="cidade">Cidade</label>
-                    <input type="text" id="cidade" name="cidade" />
+                    <input type="text" id="cidade" name="cidade" required/>
                 </div>
-
-
-                <div>
 
                     <div>
                         <button type="submit">Cadastrar</button>
